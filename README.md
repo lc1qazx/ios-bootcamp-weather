@@ -1,29 +1,29 @@
-# 天气 App 练习
+# Weather App Practice
 
-iOS Bootcamp Project 2 的初稿，界面参考 Apple Weather。先练习把数据和界面拆成小组件，后面继续调整。
+A first draft for iOS Bootcamp Project 2, inspired by Apple Weather. The focus is splitting data and UI into small reusable pieces.
 
-## 怎么运行
+## Run
 
-用 Xcode 打开 `WeatherApp.xcodeproj`，选择 `WeatherApp` 和一个 iPhone 模拟器，点击 ▶。模拟器还没下载好时，可以选择 `My Mac (Mac Catalyst)` 先看界面。
+Open `WeatherApp.xcodeproj` in Xcode. Choose the `WeatherApp` scheme and an iPhone simulator, then press Run. You can also use `My Mac (Mac Catalyst)` for a desktop preview.
 
-## 现在有什么
+## In this draft
 
-- 地点、温度、天气情况。
-- 小时预报、10 天天气和温度范围条。
-- `Hour` / `Day` 数据结构、`ForEach` 和多个独立组件。
-- 可以切换几个示例城市。
+- Location, temperature, and weather conditions.
+- Hourly forecast, ten-day forecast, and temperature bars.
+- `Hour` and `Day` models, `ForEach`, and separate view files.
+- A few sample cities to switch between.
 
-使用固定的示例数据，不是真实天气，不需要定位或网络权限。
+The forecast is sample data, not live weather. No location or network access is needed.
 
-## 后面从哪里改
+## Where to edit
 
-- `Forecast.swift`：城市和天气数据。
-- `HourlyRowView.swift`：每小时天气的样式。
-- `WeeklyRowView.swift`：每天的天气样式。
-- `ContentView.swift`：整体布局和背景。
+- `Forecast.swift`: cities and forecast data.
+- `HourlyRowView.swift`: the hourly forecast style.
+- `WeeklyRowView.swift`: the daily forecast style.
+- `ContentView.swift`: layout and background.
 
-使用 SwiftUI，iOS / Mac 构建已通过；iPhone 模拟器检查还在等待运行环境下载。
+Built with SwiftUI. iOS and Mac builds pass. iPhone simulator checks are waiting for the runtime download.
 
-初稿使用 Codex 协助，后续会继续学习和修改。
+The initial draft was made with help from Codex and will be revised.
 
-[Project 2 说明](https://appteamcarolina.notion.site/Project-2-c8ec96c1ce738389b2560119b9e2424e)
+[Project 2 instructions](https://appteamcarolina.notion.site/Project-2-c8ec96c1ce738389b2560119b9e2424e)

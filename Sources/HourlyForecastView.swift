@@ -11,13 +11,13 @@ struct HourlyForecastView: View {
             Divider().overlay(.white.opacity(0.12))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
-                    // ForEach 根据数据生成组件；稳定 id 让 SwiftUI 能跟踪每条数据。
+                    // ForEach builds a view for each item. A stable ID identifies each item.
                     ForEach(hours) { hour in
                         HourlyRowView(hour: hour)
                     }
                 }
             }
-            .accessibilityLabel("每小时预报，横向滚动查看更多")
+            .accessibilityLabel("Hourly forecast. Scroll horizontally for more.")
         }
         .padding(18)
         .background(.black.opacity(0.14), in: RoundedRectangle(cornerRadius: 18))

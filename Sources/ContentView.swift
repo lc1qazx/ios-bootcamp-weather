@@ -39,7 +39,7 @@ struct ContentView: View {
                             Image(systemName: "list.bullet")
                                 .font(.title3).frame(width: 44, height: 44)
                         }
-                        .accessibilityLabel("切换示例城市")
+                        .accessibilityLabel("Change sample city")
                     }
                 }
                 .padding(.horizontal, 20)

@@ -1,6 +1,6 @@
 import Foundation
 
-/// 离线示例数据，不代表今天的真实天气，也不会读取位置或调用 API。
+/// Offline sample data. This is not live weather and does not use location or an API.
 enum WeatherLocation: String, CaseIterable, Identifiable {
     case chapelHill = "Chapel Hill"
     case seattle = "Seattle"
