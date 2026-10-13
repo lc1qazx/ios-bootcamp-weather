@@ -5,7 +5,7 @@ struct CurrentWeatherView: View {
 
     var body: some View {
         VStack(spacing: 4) {
-            Text(forecast.location.rawValue).font(.largeTitle.weight(.medium))
+            Text(forecast.location).font(.largeTitle.weight(.medium))
             Text("\(forecast.temperature)°")
                 .font(.system(size: 88, weight: .thin, design: .rounded))
                 .padding(.leading, 14)

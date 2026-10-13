@@ -11,7 +11,6 @@ struct HourlyForecastView: View {
             Divider().overlay(.white.opacity(0.12))
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
-                    // ForEach builds a view for each item. A stable ID identifies each item.
                     ForEach(hours) { hour in
                         HourlyRowView(hour: hour)
                     }
